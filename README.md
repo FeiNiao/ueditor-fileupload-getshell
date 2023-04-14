@@ -25,6 +25,7 @@ ueditor文本编辑器文件上传漏洞，getshell
 检测poc：
 http://xxxxx.com:xx/controller.ashx?action=catchimage
 ![image](https://user-images.githubusercontent.com/66779835/231994782-7a05906f-8790-498c-b111-e213ae7c4da8.png)
+
 出现 '参数错误：没有指定抓取源' 可能存在漏洞
 
 ##### Getshell 利用
